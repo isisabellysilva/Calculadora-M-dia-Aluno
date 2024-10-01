@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Notas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/estilo.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <a href="/">Lançar notas</a>
+            <span>|</span>
+            <a href="#">Notas dos Alunos</a>
+        </div>
+
+        <!-- Corpo da tabela -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr class="header-row">
+                        <th class="cell">Nome do Aluno</th>
+                        <th class="cell">Nota 1</th>
+                        <th class="cell">Nota 2</th>
+                        <th class="cell">Nota 3</th>
+                        <th class="cell">Média do Aluno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for pro in inf %}
+                    <tr>
+                        <td class="cell">{{ pro.nome }}</td>
+                        <td class="cell">{{ pro.nota1 }}</td>
+                        <td class="cell">{{ pro.nota2 }}</td>
+                        <td class="cell">{{ pro.nota3 }}</td>
+                        <td class="cell">{{ ((pro.nota1 + pro.nota2 + pro.nota3) / 3) | round(2) }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+

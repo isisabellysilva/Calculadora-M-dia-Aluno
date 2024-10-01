@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background-color: #eab49d;
+    padding: 0;
+    border-radius: 15px;
+    width: 90vw;
+    height: 80vh;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between; /* Alinha os itens nas extremidades */
+    align-items: center; /* Alinhamento vertical */
+    background-color: #F27943;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar um efeito */
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+/* Estilo dos links (botões "Lançar notas" e "Notas dos Alunos") */
+.header a {
+    margin: 0 20px; /* Adiciona espaçamento entre os links */
+    color: #4B0082; /* Cor dos links */
+    font-size: 1.2rem;
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.header a:hover {
+    color: #632304; /* Cor ao passar o mouse */
+}
+
+.header span {
+    color: white;
+    font-size: 28px;
+}
+
+/* Formulário */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-left: 100px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Estilização dos Inputs */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    width: 50%;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+input:disabled {
+    background-color: #f0f0f0;
+}
+
+/* Botão alinhado à direita */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* A linha do botão à direita */
+    width: 100%;
+}
+
+button {
+    background-color: #F27943;
+    color: black;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    font-size: 2rem;
+}
+
+button:hover {
+    background-color: #d8662f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* segunda pagina */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background-color: #eab49d;
+    padding: 0;
+    border-radius: 15px;
+    width: 80vw;
+    height: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F27943;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header span {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.table-container {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #F27943;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+td {
+    background-color: #f8e7e7;
+    font-size: 1rem;
+    color: #333;
+}
+
+.cell {
+    height: 40px;
+}
+
+tr:nth-child(even) td {
+    background-color: #fce1d6;
+}
+
+tr:nth-child(odd) td {
+    background-color: #f8e7e7;
+}
